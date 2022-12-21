@@ -1,15 +1,21 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace FindMax_Generics
 {
-    public class Program
-    {
+    internal class Program
+    { 
         static void Main(string[] args)
         {
-            int Max = FindMax.FindMaxNum<int>(2, 1, 3);
+            int Max = FindMax<int>.FindMaxNum(2, 1, 3);
             Console.WriteLine(Max);
-            float Maxfloat = FindMax.FindMaxNum<float>(1.2f, 1.1f, 1.3f);
+            float Maxfloat = FindMax<float>.FindMaxNum(1.2f, 1.1f, 1.3f);
             Console.WriteLine(Maxfloat);
-            string MaxString = FindMax.FindMaxNum<string>("Apple", "Peach", "Banana");
+            string MaxString = FindMax<string>.FindMaxNum("Apple", "Peach", "Banana");
             Console.WriteLine(MaxString);
         }
     }
