@@ -5,7 +5,7 @@ namespace FindMax_Generics
     {
         static void Main(string[] args)
         {
-            int Max = FindMax.FindIntMax(6, 3, 12);
+            int Max = FindMax.FindIntMax(3, 2, 1);
             Console.WriteLine(Max);
         }
     }
