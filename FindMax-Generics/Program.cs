@@ -9,6 +9,8 @@ namespace FindMax_Generics
             Console.WriteLine(Max);
             float Maxfloat = FindMax.FindFloatMax(1.2f, 1.1f, 1.3f);
             Console.WriteLine(Maxfloat);
+            string MaxString = FindMax.FindStringMax("Apple", "Peach", "Banana");
+            Console.WriteLine(MaxString);
         }
     }
     
